@@ -22,7 +22,7 @@ File compression/decompression software using Huffman Encoding/Decoding
 
 Lets say you want to compress the file `medium.txt` and then decompress it after.
 
-`
+```
 Welcome to the file compression app!
 1.  Build character frequency map
 2.  Build encoding tree
@@ -40,11 +40,11 @@ Q.  Quit
 
 Enter choice: C
 Enter filename: medium.txt
-`
+```
 
 This will generate a file called medium.txt.huf, which contains the ASCII values of all the characters in the text file along with their frequencies. This is formatted with the ASCII values to the left side of the colon, and the frequency of that ASCII value to the right side of the colon. The random characters at the end of the file represent the binary tree which is used for decompression. To decompress the file we have just encoded, run the following:
 
-`
+```
 Welcome to the file compression app!
 1.  Build character frequency map
 2.  Build encoding tree
@@ -62,6 +62,6 @@ Q.  Quit
 
 Enter choice: D
 Enter filename: medium.txt.huf
-`
+```
 
 This will rebuild the txt file to the original way it was by traversing the binary tree from the encoded file and storing it in a file renamed to `medium_unc.txt`.
